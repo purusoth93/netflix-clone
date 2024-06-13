@@ -1,0 +1,81 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+p,h1{
+    color:white;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+.poster{
+    width:100%;
+    object-fit: contain;
+    max-height: 100px;
+    margin-right:10px;
+    transition: transform 450ms;
+}
+.posters{
+    display:flex;
+    overflow-y: hidden;
+    overflow-x: scroll ;
+    padding:20px;
+}
+.poster:hover{
+    transform:scale(1.10);
+}
+.posters::-webkit-scrollbar{
+    display:none;
+}
+.row_large:hover{
+    max-height: 100px;
+    transform: scale(1.20);
+
+}
+.row{
+    margin-left:20px;
+}
+.banner{
+    background-image: url(../images/movie3.jpg);
+    background-size: cover;
+    background-position: center center;
+    object-fit: contain;
+    height:500px;
+}
+.banner_contents{
+    margin-left: 30px;
+    padding-top:280px;
+    height:190px;
+}
+.banner_button{
+    background-color: black;
+    color:white;
+    margin-top:10px;
+    border-radius:5px;
+    width:50px;
+    height:30px;
+    margin-bottom:10px;
+}
+.banner_button:hover{
+    color:black;
+    background-color: white;
+}
+.fade{
+    margin-top:100px;
+    height:7.4rem;
+    background:linear-gradient(180deg,transparent,rgba(37,37,37,0.61),#111)
+}
+.head{
+    width:5px;
+    object-fit: contain;
+}
+.logo{
+    width:100px;
+    object-fit:contain;
+    border-radius: 30px;
+}
+.head{
+    position:fixed
+}
